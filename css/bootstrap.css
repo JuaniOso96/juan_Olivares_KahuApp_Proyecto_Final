@@ -332,8 +332,7 @@ mark, .mark {
   background-color: var(--bs-highlight-bg);
 }
 
-sub,
-sup {
+sub, sup {
   position: relative;
   font-size: 0.75em;
   line-height: 0;

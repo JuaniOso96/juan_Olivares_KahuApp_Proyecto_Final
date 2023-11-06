@@ -58,10 +58,9 @@ z-index: 10;
     padding: 1%;
 }
 
-
-
 .tituloHeader {
     align-content: center;
+    
 }
 
 header {
@@ -171,6 +170,7 @@ iframe {
     background-color: #B83564;
     color: #FCFBF7;
     margin-right: 6%;
+    font-size: 12px;
 }
 
 .secciones_2 {
@@ -213,7 +213,7 @@ iframe {
     padding: 8px;
 }
 
-.card-content h3 {
+.card-content h3, .card-title {
     font-size: 1.2rem;
     margin-bottom: 8px;
     color: #B83564;
@@ -223,6 +223,10 @@ iframe {
     font-size: 1rem;
     margin-bottom: 16px;
     color: #272D4D;
+}
+
+.card-footer{
+ background-color: #FFB350;   
 }
 
 .boton_ver_mas {
@@ -246,8 +250,16 @@ footer {
     overflow: auto;
 }
 
+.text_footer{
+    color: #FCFBF7;
+text-align: center;
+margin-left: 6%;
+margin-top: 0%;
+margin-right: 6%;
+margin-bottom: 6%;
+}
+
 .navbar {
-    margin-bottom: 32px;
     color: #FCFBF7;
     justify-content: center;
     align-items: center;
@@ -273,6 +285,7 @@ footer {
     width: 150px;
     height: 150px;
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .pie_pagina {
@@ -363,6 +376,11 @@ footer {
         "area1 area2 area6 area7"
         "area8 area8 area8 area7"
         "area8 area8 area8 area7";
+}
+
+.custom-image {
+    width: 50%; /* Ancho deseado en píxeles */
+
 }
 
 /* Estilos mobile y tablets */
