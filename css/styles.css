@@ -378,11 +378,6 @@ margin-bottom: 6%;
         "area8 area8 area8 area7";
 }
 
-.custom-image {
-    width: 50%; /* Ancho deseado en píxeles */
-
-}
-
 /* Estilos mobile y tablets */
 @media screen and (max-width: 1199px) {
     .menu {
