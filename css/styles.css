@@ -378,6 +378,97 @@ margin-bottom: 6%;
         "area8 area8 area8 area7";
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 16px;
+}
+
+form {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.tarjeta-identificatoria div {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #cf7193;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #B83564;
+}
+
+.tarjeta-identificatoria {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.columna-1, .columna-2, .columna-3 {
+    width: 33.3%; /* Ajusta según sea necesario */
+}
+
+#codigo-qr {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+#imagen-mascota {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Para ajustar la imagen manteniendo las proporciones */
+    border-radius: 5%; /* Para hacer que la imagen sea circular, puedes ajustar el porcentaje según tus preferencias */
+}
+
+.logo-kahuapp {
+    width: 100px;
+    margin-top: 20px;
+}
 /* Estilos mobile y tablets */
 @media screen and (max-width: 1199px) {
     .menu {
@@ -420,7 +511,17 @@ margin-bottom: 6%;
         margin-left: auto;
 
     }
+
+    .tarjeta-identificatoria {
+        margin-top: 20px;
+    }
+
+    .formulario {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
+
 
 
 /* Estilos para desktop */
@@ -432,4 +533,18 @@ margin-bottom: 6%;
     .menu_hamburguesa {
         display: none;
     }
+
+    .container {
+        align-items: center;
+    }
+
+    .formulario {
+        margin-bottom: 0;
+    }
+
+    .tarjeta-identificatoria {
+        margin-top: 0;
+        margin-left: ;
+    }
+
 }
