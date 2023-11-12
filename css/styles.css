@@ -21,7 +21,7 @@ html {
     align-items: center;
     background-color: rgba(252, 251, 247, 0.9);
     position: fixed;
-z-index: 10;
+    z-index: 10;
 }
 
 .menu ul {
@@ -41,6 +41,7 @@ z-index: 10;
     text-decoration: none;
     color: #272D4D;
     font-size: 16px;
+    position: relative;
 }
 
 .menu li img {
@@ -58,9 +59,29 @@ z-index: 10;
     padding: 1%;
 }
 
+.menu li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #B83564;
+    transition: width 0.3s, background-color 0.5s;
+    position: absolute;
+    bottom: -4px;
+}
+
+.menu li a:hover {
+    color: #B83564;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+    background-color: #B83564;
+}
+
 .tituloHeader {
     align-content: center;
-    
+
 }
 
 header {
@@ -213,7 +234,8 @@ iframe {
     padding: 8px;
 }
 
-.card-content h3, .card-title {
+.card-content h3,
+.card-title {
     font-size: 1.2rem;
     margin-bottom: 8px;
     color: #B83564;
@@ -225,8 +247,8 @@ iframe {
     color: #272D4D;
 }
 
-.card-footer{
- background-color: #FFB350;   
+.card-footer {
+    background-color: #FFB350;
 }
 
 .boton_ver_mas {
@@ -250,13 +272,13 @@ footer {
     overflow: auto;
 }
 
-.text_footer{
+.text_footer {
     color: #FCFBF7;
-text-align: center;
-margin-left: 6%;
-margin-top: 0%;
-margin-right: 6%;
-margin-bottom: 6%;
+    text-align: center;
+    margin-left: 6%;
+    margin-top: 0%;
+    margin-right: 6%;
+    margin-bottom: 6%;
 }
 
 .navbar {
@@ -392,7 +414,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    }
+}
 
 .formulario {
     width: 100%;
@@ -409,7 +431,8 @@ label {
     margin-bottom: 4px;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 8px;
     margin-bottom: 8px;
@@ -448,44 +471,53 @@ input, select {
     text-align: left;
 }
 
-.columna-1, .columna-2, .columna-3 {
-    width: 33.3%; /* Ajusta según sea necesario */
+.columna-1,
+.columna-2,
+.columna-3 {
+    width: 33.3%;
+    /* Ajusta según sea necesario */
+}
+
+.columna-3 {
+    justify-content: center;
 }
 
 #codigo-qr {
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
 }
 
 #imagen-mascota {
     width: 100px;
     height: 100px;
-    object-fit: cover; /* Para ajustar la imagen manteniendo las proporciones */
-    border-radius: 5%; /* Para hacer que la imagen sea circular, puedes ajustar el porcentaje según tus preferencias */
+    object-fit: cover;
+    /* Para ajustar la imagen manteniendo las proporciones */
+    border-radius: 5%;
+    /* Para hacer que la imagen sea circular, puedes ajustar el porcentaje según tus preferencias */
 }
 
 .logo-kahuapp {
     width: 100px;
     margin-top: 20px;
 }
+
 /* Estilos mobile y tablets */
 @media screen and (max-width: 1199px) {
     .menu {
         display: none;
     }
 
-#menu-checkbox:checked~.menu{
-    display: flex;
-    background-color: #FCFBF7;
-    width: 70%;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
+    #menu-checkbox:checked~.menu {
+        display: flex;
+        background-color: #FCFBF7;
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
 
     iframe {
         width: 100%;
@@ -544,7 +576,8 @@ input, select {
 
     .tarjeta-identificatoria {
         margin-top: 0;
-        margin-left: ;
+        margin: 0;
+        ;
     }
 
 }

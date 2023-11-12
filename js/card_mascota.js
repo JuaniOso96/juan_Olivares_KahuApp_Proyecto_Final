@@ -1,3 +1,4 @@
+//tarjeta registro mascota
 document.getElementById("formulario").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -21,7 +22,7 @@ document.getElementById("formulario").addEventListener("submit", function (event
     // Cambiar estilos de la tarjeta identificatoria
     tarjetaIdentificatoria.style.backgroundColor = tipo === "perro" ? "#87CEFA" : "#FFC0CB";
     tarjetaIdentificatoria.style.color = tipo === "perro" ? "#000000" : "#000000"; // Cambia el color del texto según el tipo
-    imagenMascota.style.borderRadius = tipo === "perro" ? "5% 0% 5% 5%" : "0% 5% 5% 5%";
+    imagenMascota.style.borderRadius = tipo === "perro" ? "5% 5% 5% 5%" : "5% 5% 5% 5%";
 
     // Cambiar imagen de fondo según el tipo de mascota
     imagenMascota.style.backgroundImage = `url('path/to/${tipo}.jpg')`;
@@ -34,7 +35,6 @@ document.getElementById("formulario").addEventListener("submit", function (event
     });
 });
 
-// Agrega este código al final de tu bloque de script
 document.getElementById("foto").addEventListener("change", function () {
     const fileInput = this;
     const imagePreview = document.getElementById("imagen-mascota");
