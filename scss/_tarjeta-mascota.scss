@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: flex-start;
+
+    .formulario {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 16px;
+
+        form {
+            margin-bottom: 16px;
+
+            label {
+                display: block;
+                margin-bottom: 4px;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 8px;
+                border: 1px solid #ccc;
+                border-radius: 30px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .tarjeta-identificatoria div {
+        margin-bottom: 10px;
+    }
+
+    .btn_1 {
+        background: linear-gradient(-45deg, var(--color-1), var(--color-2));
+        background-size: 500% 500%;
+        animation: bg 8s ease infinite reverse;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: background-color 0.3s;
+        width: 100%;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .tarjeta-identificatoria {
+        display: flex;
+        justify-content: space-between;
+        background: url('../images/fondo_tarjeta_mascota.png') center center/cover no-repeat;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: left;
+        font-size: 0.875rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        .columna-1 {
+            width: 40%;
+            justify-content: center;
+        }
+
+        .columna-2,
+        .columna-3 {
+            width: 30%;
+            justify-content: center;
+        }
+
+        #codigo-qr {
+            width: 150px;
+            height: 150px;
+        }
+
+        #imagen-mascota {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            /* Para ajustar la imagen manteniendo las proporciones */
+            border-radius: 5%;
+            /* Para hacer que la imagen sea circular, puedes ajustar el porcentaje según tus preferencias */
+        }
+
+        .logo-kahuapp {
+            width: 100px;
+            margin-top: 20px;
+        }
+    }
+
+}

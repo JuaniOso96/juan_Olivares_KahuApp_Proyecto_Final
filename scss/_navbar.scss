@@ -1,0 +1,38 @@
+.container-fluid{
+    background-color: #FCFBF7;
+}
+/*Estilo lista*/
+.navbar{
+background-color: rgba(252, 251, 247, 0.9);
+position: fixed;
+z-index: 10;
+width: 100%;
+height: auto;
+.btn{
+    background-color: #B83564;
+    color: #FCFBF7;
+    border: none;
+    border-radius: 30px;
+    margin-left: auto;
+}
+.i{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+a{
+    color:#272D4D ;
+}
+
+a:hover {
+    color: #B83564;
+}
+
+a:hover::after {
+    width: 100%;
+    background-color: #B83564;
+}
+.nav-link active{
+    color: #171a2e;
+}
+}

@@ -13,39 +13,86 @@
 <body class="pagina_1">
     <header>
 
-        <nav>
-            <div class="menu_hamburguesa">
-                <input type="checkbox" id="menu-checkbox"> <!-- Checkbox para el menú hamburguesa -->
-                <label for="menu-checkbox">
-                    <img src="./images/icono_menu.svg" alt="Menú Hamburguesa">
-                </label>
-                <img src="./images/Logo_Kahu_V.2.png" alt="Logo_KahuApp" class="logo">
-                <button class="boton_descargar_app">Descargar App</button>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Logo_Kahu_V.2.png" alt="KahuApp" height="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/index.html"><img
+                                    src="./images/icono_inicio.svg" class="i">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tengo_mascota.html"><img src="./images/icono_mascotas.svg"
+                                    class="i">Tengo mascota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/soy_proveedor.html"><img
+                                    src="./images/icono_prestador.svg" class="i">Soy proveedor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/kahu_tips.html"><img src="./images/icono_tips.svg"
+                                    class="i">Kahu tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/preguntas_frecuentes.html"><img
+                                    src="./images/icono_preguntas_frecuentes.svg" class="i">Preguntas frecuentes</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Descargar app</button>
+                </div>
             </div>
-            <ul class="menu">
-                <a href="index.html"> <img src="./images/Logo_Kahu_V.2.png" alt="Logo_KahuApp" class="logo"></a>
-                <li><a href="index.html"><img src="./images/icono_inicio.svg">Inicio</a></li>
-                <li><a href="./pages/tengo_mascota.html"><img src="./images/icono_mascotas.svg">Tengo mascota</a></li>
-                <li><a href="./pages/soy_proveedor.html"><img src="./images/icono_prestador.svg">Soy Proveedor</a></li>
-                <li><a href="./pages/kahu_tips.html"><img src="./images/icono_tips.svg">Kahu tips</a></li>
-                <li><a href="./pages/preguntas_frecuentes.html"><img src="./images/icono_preguntas_frecuentes.svg">
-                        Preguntas frecuentes</a></li>
-                <button class="boton_descargar_app">Descargar la App</button>
-            </ul>
-            <h1 class="tituloHeader">Uniendo corazones y patitas🐾💖</h1>
         </nav>
+        <h1 class="tituloHeader"><strong>Uniendo corazones y patitas🐾💖</strong></h1>
+
 
     </header>
     <main>
 
         <section class="carrusel"><!--sección Slider proveedores -->
+            <h2><strong>Confían en nosotros</strong></h2>
+            <div class="container">
+                <div class="row">
+                    <d class="col-md-6">
+                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/logos_proveedores/ejemplo veterinaria.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/logos_proveedores/logo emergencias veterinarias.webp" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/logos_proveedores/Veterinaria santalucia logo.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                </div>
 
-            <h2>Conifían en nosotros</h2>
+            </div>
+            </div>
+
 
         </section>
 
         <div id="space">
-            <h2>¿Que significa kahu?</h2>
+            <h2><strong>¿Que significa kahu?</strong></h2>
             <section class="secciones_1"><!--sección ¿Que significa kahu? -->
 
                 <iframe width="320" height="320" src="https://www.youtube.com/embed/Uko9GFqCCOM"
@@ -60,13 +107,10 @@
             </section>
         </div>
         <div id="space">
-            <h2>¿Que es KahuApp?</h2>
+            <h2><strong>¿Que es KahuApp?</strong></h2>
             <section class="secciones_1"><!--sección ¿Que es KahuApp? -->
 
-
                 <p class="parrafos">
-                    <strong>Bienvenido a KahuApp!</strong> donde se encuentran los amantes de las mascotas
-                    y los apasionados proveedores de servicios. <br>
                     <strong>Para los <s>dueños</s> GUARDIANES de mascotas</strong>, somos un universo todo en uno. Desde
                     recordatorios de citas hasta historiales
                     médicos y comunicación sin esfuerzo con tus proveedores de confianza, KahuApp
@@ -85,31 +129,42 @@
         </div>
 
         <div class="secciones_2">
-            <h2 class="h2_blanco">¡Se parte de nuestro mundo!</h2>
-            <section class="secciones_2_1"><!--sección ¿Por qué elegir KahuApp? -->
+            <h2 class="h2_blanco"><strong>¡Se parte de nuestro mundo!</strong></h2>
+            <section class="secciones_2_1"><!--sección separte de nuetro mundo -->
                 <div class="card">
-                    <img src="./images/fondo_header_kahuApp_3.jpg" alt="Descripción de la imagen">
+                    <img src="./images/fondo_header_kahuApp_3.jpg" alt="Para mascotas">
                     <div class="card-content">
-                        <h3>Kahu para dueños de mascotas</h3>
+                        <h3><strong>Kahu para dueños de mascotas</strong></h3>
                         <p>Te acompañamos en todos los momentos de tu mascota.</p>
-                        <button class="boton_ver_mas">Ver más</button>
-
+                        <div id="button-w">
+                            <button class="learn-more">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Ver más</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./images/fondo_header_kahuApp_4.1.jpg" alt="Descripción de la imagen">
+                    <img src="./images/fondo_header_kahuApp_4.1.jpg" alt="Para proveedores">
                     <div class="card-content">
-                        <h3>Kahu para proveedores de servicios</h3>
+                        <h3><strong>Kahu para proveedores de servicios</strong></h3>
                         <p>Te acompañamos en todos los momentos de tu mascota.</p>
-                        <button class="boton_ver_mas">Ver más</button>
-                    </div>
-                </div>
+                        <div id="button-w">
+                            <button class="learn-more">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Ver más</span>
+                            </button>
+                        </div>
             </section>
         </div>
 
         <section><!--sección sobre nosotros -->
 
-            <h2>Sobre nosotros</h2>
+            <h2><strong>Sobre nosotros</strong></h2>
 
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -181,12 +236,14 @@
         <h6 class="pie_pagina">Copyrights 2023 © Hecho con 🩷 por KahuApp</h6>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

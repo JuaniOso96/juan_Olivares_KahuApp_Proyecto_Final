@@ -20,8 +20,6 @@ document.getElementById("formulario").addEventListener("submit", function (event
     document.getElementById("info-genero").textContent = genero;
 
     // Cambiar estilos de la tarjeta identificatoria
-    tarjetaIdentificatoria.style.backgroundColor = tipo === "perro" ? "#87CEFA" : "#FFC0CB";
-    tarjetaIdentificatoria.style.color = tipo === "perro" ? "#000000" : "#000000"; // Cambia el color del texto según el tipo
     imagenMascota.style.borderRadius = tipo === "perro" ? "5% 5% 5% 5%" : "5% 5% 5% 5%";
 
     // Cambiar imagen de fondo según el tipo de mascota

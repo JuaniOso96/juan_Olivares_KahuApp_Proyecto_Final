@@ -1,0 +1,42 @@
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+    border-radius: 0px 0px 16px 16px;
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
+    color: $color-fondo;
+    padding-top: 200px;
+}
+
+.tituloHeader {
+    align-content: center;
+
+}
+
+body.pagina_1 header {
+    background-image: url(../images/imagen_section_1_Kahu.jpg);
+}
+
+body.pagina_2 header {
+    background-image: url(../images/fondo_header_kahuApp_2.jpg)
+}
+
+body.pagina_3 header {
+    background-image: url(../images/fondo_header_kahuApp_3.jpg)
+}
+
+body.pagina_4 header {
+    background-image: url(../images/fondo_header_kahuApp_4.jpg)
+}
+
+body.pagina_5 header {
+    background-image: url(../images/fondo_header_kahuApp_5.jpg)
+}
+
