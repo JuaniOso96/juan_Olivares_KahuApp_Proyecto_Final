@@ -357,15 +357,26 @@ button:hover .button-text {
 }
 
 .container_1 {
-                    background: linear-gradient(-45deg, var(--color-1), var(--color-2));
-                background-size: 500% 500%;
-                animation: bg 8s ease infinite reverse;
+    background: linear-gradient(-45deg, var(--color-1), var(--color-2));
+    background-size: 500% 500%;
+    animation: bg 8s ease infinite reverse;
+}
+
+.screenshot-image{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 200px;
 }
 
 
 
-
 /* Estilos mobile y tablets */
+@media screen and (max-width: 449px) {
+.tarjeta-identificatoria{
+    width: 100%;
+}
+}
 @media screen and (max-width: 1199px) {
 
     .secciones_1 iframe {

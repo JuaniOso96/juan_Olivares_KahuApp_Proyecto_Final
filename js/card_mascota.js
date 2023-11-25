@@ -26,8 +26,14 @@ document.getElementById("formulario").addEventListener("submit", function (event
     imagenMascota.style.backgroundImage = `url('path/to/${tipo}.jpg')`;
 
     // Generar y mostrar el código QR
+
+    console.log(nombre)
+    console.log(tipo)
+    console.log(raza)
+    console.log(propietario)
+    console.log(genero)
     const qrCode = new QRCode(qrCodeDiv, {
-        text: `Nombre: ${nombre}\nTipo: ${tipo}\nRaza: ${raza}\nPropietario: ${propietario}\nGénero: ${genero}`,
+        text: `Nombre: ${nombre}`,
         width: 100,
         height: 100
     });
@@ -44,4 +50,58 @@ document.getElementById("foto").addEventListener("change", function () {
         };
         reader.readAsDataURL(fileInput.files[0]);
     }
+});
+
+//Carrusel 2
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".carru-slide");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? "block" : "none";
+        });
+    }
+
+    function updateIndicators() {
+        const indicatorsContainer = document.querySelector(".carru-indicators");
+        indicatorsContainer.innerHTML = "";
+
+        slides.forEach((slide, i) => {
+            const button = document.createElement("button");
+            button.addEventListener("click", () => {
+                currentSlide = i;
+                showSlide(currentSlide);
+            });
+            indicatorsContainer.appendChild(button);
+        });
+
+        // Marcar el indicador correspondiente al slide actual
+        const indicators = indicatorsContainer.querySelectorAll("button");
+        indicators[currentSlide].classList.add("active");
+    }
+
+    function showNextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+        updateIndicators();
+    }
+
+    function showPrevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+        updateIndicators();
+    }
+
+    // Inicialización
+    showSlide(currentSlide);
+    updateIndicators();
+
+    // Configurar botones de navegación
+    document.querySelector(".carru-prev").addEventListener("click", showPrevSlide);
+    document.querySelector(".carru-next").addEventListener("click", showNextSlide);
+
+    // Configurar cambio automático de slides cada 5 segundos
+    setInterval(showNextSlide, 5000);
 });

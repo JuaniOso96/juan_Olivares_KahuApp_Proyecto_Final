@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 16px;
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,6 +55,8 @@
 
         &:hover {
             transform: scale(1.05);
+            transition: 0.5s ease-in-out;
+            
         }
     }
 
@@ -64,10 +66,12 @@
         background: url('../images/fondo_tarjeta_mascota.png') center center/cover no-repeat;
         padding: 8px;
         border: 1px solid #ccc;
-        border-radius: 10px;
+        border-radius: 16px;
         text-align: left;
         font-size: 0.875rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 9;
+        background-color: $color-fondo ;
 
         .columna-1 {
             width: 40%;
@@ -90,7 +94,7 @@
             height: 100px;
             object-fit: cover;
             /* Para ajustar la imagen manteniendo las proporciones */
-            border-radius: 5%;
+            border-radius: 16px;
             /* Para hacer que la imagen sea circular, puedes ajustar el porcentaje según tus preferencias */
         }
 
