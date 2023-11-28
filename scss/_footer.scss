@@ -15,37 +15,32 @@ footer {
         margin-right: 6%;
         margin-bottom: 6%;
     }
+    ul {
+        list-style-type: none;
+        padding: 0;
 
-    .navbar {
-        color: $color-fondo;
-        justify-content: center;
-        align-items: center;
-    
-        .list_nav {
-            list-style-type: none;
-    
-            li {
+
+        li {
+            display: block;
+            margin-bottom: 8px;
+            a {
+                color: $color-fondo;
                 text-decoration: none;
-    
-                a {
-                    color: $color-fondo;
-                    font-size: 16px;
-                }
             }
         }
     }
+    .navbar {
+        color: $color-fondo;
+        text-align: center;
 
-    .logo_footer {
-        height: 96px;
-        margin-right: 120px;
-        margin-left: 6%;
+        
     }
-
     .imagen_qr {
         width: 150px;
         height: 150px;
         margin-top: 32px;
         margin-bottom: 32px;
+        margin-right: 6%; // Reduce margin-right for more space
     }
 
     .pie_pagina {
@@ -53,5 +48,8 @@ footer {
         margin-bottom: 32px;
         width: 100%;
         text-align: center;
+    }
+    img{
+        width: 280px;
     }
 }

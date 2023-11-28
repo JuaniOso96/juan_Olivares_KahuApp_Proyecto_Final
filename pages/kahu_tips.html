@@ -4,65 +4,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KahuApp</title>
+    <title>KahuApp | Tips</title>
     <link rel="shortcut icon" href="../images/KahuApp_Logo_2.png">
+    <!--SEO-->
+    <meta name="description"
+        content="Con KahuApp, simplifica la vida de tu mascota y tu negocio. Historiales médicos digitales, gestión de citas, directorio de proveedores y más. Únete a la plataforma integral para amantes de las mascotas.">
+    <meta name="keywords"
+        content="mascotas, perro, gato, Cuidado animal, veterinario, paseador, Peluquería, Cuidado de mascotas, Historial médico digital, Gestión de citas para mascotas, Directorio de proveedores para animales, Servicios para dueños de mascotas, Plataforma para animales, Cuidadores de mascotas, Paseadores de perros, Peluquería canina, Emergencias veterinarias, KahuApp, Salud y bienestar animal, Herramientas para veterinarios, Plataforma integral para mascotas">
+    <!--Hojas de estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body class="pagina_2">
     <header>
 
-        <nav>
-            <ul class="menu">
-                <a href="index.html"> <img src="../images/Logo_Kahu_V.2.png" alt="Logo_KahuApp" class="logo"></a>
-                <li><a href="../index.html"><img src="../images/icono_inicio.svg">Inicio</a></li>
-                <li><a href="./tengo_mascota.html"><img src="../images/icono_mascotas.svg">Tengo mascota</a></li>
-                <li><a href="./soy_proveedor.html"><img src="../images/icono_prestador.svg">Soy Proveedor</a></li>
-                <li><a href="kahu_tips.html"><img src="../images/icono_tips.svg">Kahu tips</a></li>
-                <li><a href="./preguntas_frecuentes.html"><img src="../images/icono_preguntas_frecuentes.svg"> Preguntas
-                        frecuentes</a></li>
-            </ul>
-            <h1 class="tituloHeader">Tips</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/Logo_Kahu_V.2.png" alt="KahuApp" height="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><img src="../images/icono_inicio.svg"
+                                    class="i">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./tengo_mascota.html"><img
+                                    src="../images/icono_mascotas.svg" class="i">Tengo mascota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./soy_proveedor.html"><img src="../images/icono_prestador.svg"
+                                    class="i">Soy
+                                proveedor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./kahu_tips.html"><img src="../images/icono_tips.svg"
+                                    class="i">Kahu
+                                tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./preguntas_frecuentes.html"><img
+                                    src="../images/icono_preguntas_frecuentes.svg" class="i">Preguntas frecuentes</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Descargar app</button>
+                </div>
+            </div>
         </nav>
+        <h1 class="tituloHeader"><strong>Tips</strong></h1>
 
     </header>
     <main class="grid_conteiner">
         <div class="tip_1">
-            <h3><img src="../images/icono_mascotas.svg">area 1</h3>
-            <p class="parrafo_tips">Brindale a tu mascota un lugar donde pueda descansar con comodidad.</p>
+            <div class="background-image"></div>
+            <p><img src="../images/icono_mascotas.svg">Brindale a tu mascota un lugar donde pueda descansar con
+                comodidad.</p>
+            <!-- Button trigger modal -->
+            <div id="button-w">
+                <button class="learn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Ver más</span>
+
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../images/Tips/icono_tip_1.svg" alt="icono comodidad">
+                            <h3 class="modal-title fs-5" id="staticBackdropLabel1"><strong>Espacio de comodidad</strong></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Un hogar seguro evita accidentes. Elimina posibles peligros, como sustancias tóxicas o
+                            cables sueltos. Proporcionar un entorno cómodo y seguro es esencial para la tranquilidad y
+                            el bienestar de tu mascota. 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tip_2">
-            <h3><img src="../images/icono_mascotas.svg">area 2</h3>
-            <p class="parrafo_tips">Brindale a tu mascota un lugar donde pueda descansar con comodidad.</p>
+            <div class="background-image"></div>
+            <p><img src="../images/icono_mascotas.svg">Dedica momentos especiales para jugar y interactuar con tu
+                mascota. La conexión emocional es fundamental</p>
+            <!-- Button trigger modal -->
+            <div id="button-w">
+                <button class="learn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Ver más</span>
+
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../images/Tips/icono_tip_2.svg" alt="icono tiempo de calidad">
+                            <h3 class="modal-title fs-5" id="staticBackdropLabel2"><strong>Tiempo de calidad</strong></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Establecer momentos de juego y afecto fortalece el vínculo entre vos y tu mascota. Además, te permite estar atento a cualquier cambio en su comportamiento o salud, facilitando la detección temprana de problemas.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tip_3">
-            <h3><img src="../images/icono_prestador.svg">area 3</h3>
-            <p class="parrafo_tips">Brindale a tu mascota un lugar donde pueda descansar con comodidad.</p>
+            <div class="background-image"></div>
+            <p><img src="../images/icono_mascotas.svg">Asegúrate de que tu mascota se mantenga activa</p>
+            <!-- Button trigger modal -->
+            <div id="button-w">
+                <button class="learn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Ver más</span>
+
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../images/Tips/icono_tip_3.svg" alt="icono tiempo de calidad">
+                            <h3 class="modal-title fs-5" id="staticBackdropLabel3"><strong>Ejercicio diario</strong></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            El ejercicio diario es clave para la salud física y mental de tu mascota. No solo ayuda a mantener un peso saludable, sino que también previene comportamientos destructivos debido al aburrimiento. Además, es una oportunidad para fortalecer el vínculo y disfrutar juntos.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tip_4">
-            <h3><img src="../images/icono_mascotas.svg">area 4</h3>
-            <p class="parrafo_tips">Brindale a tu mascota un lugar donde pueda descansar con comodidad.</p>
+            <div class="background-image"></div>
+            <p><img src="../images/icono_mascotas.svg">Mantén la salud de tu mascota con visitas programadas y chequeos
+                regulares.</p>
+            <!-- Button trigger modal -->
+            <div id="button-w">
+                <button class="learn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Ver más</span>
+
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../images/Tips/icono_tip_4.svg" alt="icono tiempo de calidad">
+                            <h3 class="modal-title fs-5" id="staticBackdropLabel4"><strong>Citas regulares con el veterinario</strong>
+                            </h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Las visitas regulares al veterinario no solo son para tratar enfermedades, sino también para
+                            prevenirlas. La atención preventiva incluye vacunas, chequeos de salud y asesoramiento sobre
+                            nutrición. Esto garantiza que tu mascota esté en su mejor forma y detecta cualquier problema
+                            temprano.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tip_6">
-            <h3><img src="../images/icono_mascotas.svg">area 6</h3>
-            <p class="parrafo_tips">Brindale a tu mascota un lugar donde pueda descansar con comodidad.</p>
+            <div class="background-image"></div>
+            <p><img src="../images/icono_mascotas.svg">Cuida los dientes de tu mascota. Usa juguetes y snacks que
+                promuevan la salud dental</p>
+            <!-- Button trigger modal -->
+            <div id="button-w">
+                <button class="learn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Ver más</span>
+
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel6" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../images/Tips/icono_tip_6.svg" alt="icono tiempo de calidad">
+                            <h3 class="modal-title fs-5" id="staticBackdropLabel6"><strong>Higiene dental</strong></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La salud bucal afecta la salud general. El cepillado regular, junto con juguetes y snacks dentales, previene problemas dentales que pueden llevar a enfermedades más graves. Una buena salud dental mejora la calidad de vida.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tip_7">
-            <h3><img src="../images/icono_mascotas.svg">Area 7</h3>
-            <p class="parrafo_tips">Brindale a tu mascota un lugar donde pueda descansar con comodidad.</p>
+            <div class="background-image"></div>
+            <p><img src="../images/icono_mascotas.svg">Proporciona una dieta adecuada para su raza y tamaño. Consulta
+                con el veterinario sobre las necesidades dietéticas específicas.</p>
+            <!-- Button trigger modal -->
+            <div id="button-w">
+                <button class="learn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Ver más</span>
+
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel7" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../images/Tips/icono_tip_7.svg" alt="icono tiempo de calidad">
+                            <h3 class="modal-title fs-5" id="staticBackdropLabel7"><strong>Nutrición equilibrada</strong></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Una dieta equilibrada es esencial para la salud a largo plazo. Cada mascota tiene necesidades dietéticas específicas según su raza y tamaño. Consultar con el veterinario garantiza que reciban los nutrientes adecuados para su bienestar general.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tip_8">
-            <h3><img src="../images/icono_mascotas.svg">Area 8</h3>
-            <p class="parrafo_tips">Brindale a tu mascota un lugar donde pueda descansar con comodidad.</p>
+            <div class="background-image"></div>
+            <p><img src="../images/icono_mascotas.svg">Asegúrate de que tu mascota tenga un collar con identificación.
+            </p>
+            <!-- Button trigger modal -->
+            <div id="button-w">
+                <button class="learn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Ver más</span>
+
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel8" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../images/Tips/icono_tip_8.svg" alt="icono tiempo de calidad">
+                            <h3 class="modal-title fs-5" id="staticBackdropLabel8"><strong>Identificación permanente</strong></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La identificación permanente es una precaución vital en caso de pérdida. Asegura que tu mascota pueda ser rápidamente reunida contigo, brindando seguridad y reduciendo el estrés en situaciones difíciles.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
-
+        <div>
+            <a href="../index.html"> <img src="../images/Logo_Kahu_Blanco_V.2.png" alt="Logo_KahuApp"
+                    class="logo_footer"></a>
+            <h5 class="text_footer">Uniendo corazones y patitas🐾💖</h5>
+        </div>
+        <nav>
+            <ul class="list_nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/tengo_mascota.html">Tengo mascota</a></li>
+                <li><a href="./pages/soy_proveedor.html">Soy Proveedor</a></li>
+                <li><a href="./pages/kahu_tips.html">Kahu tips</a></li>
+                <li><a href="./pages/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+            </ul>
+        </nav>
+        <img src="../images/qr linktree kahuapp.png" alt="Qr KahuApp" class="imagen_qr">
+        <h6 class="pie_pagina">Copyrights 2023 © Hecho con 🩷 por KahuApp</h6>
     </footer>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/card_mascota.js"></script>
 </body>
 
 </html>
