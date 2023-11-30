@@ -78,7 +78,7 @@ body.pagina_2 header {
 }
 
 body.pagina_3 header {
-  background-image: url(../images/fondo_header_kahuApp_3.jpg);
+  background-image: url(../images/fondo_header_kahuApp_5.jpg);
 }
 
 body.pagina_4 header {
@@ -86,7 +86,7 @@ body.pagina_4 header {
 }
 
 body.pagina_5 header {
-  background-image: url(../images/fondo_header_kahuApp_5.jpg);
+  background-image: url(../images/fondo_header_kahuApp_6.jpg);
 }
 
 footer {
@@ -136,7 +136,7 @@ footer .pie_pagina {
   text-align: center;
 }
 footer img {
-  width: 280px;
+  width: 264px;
 }
 
 .container {
