@@ -74,7 +74,7 @@ body.pagina_1 header {
 }
 
 body.pagina_2 header {
-  background-image: url(../images/fondo_header_kahuApp_2.jpg);
+  background-image: url(../images/fondo_header_kahuApp_3.jpg);
 }
 
 body.pagina_3 header {
@@ -82,7 +82,7 @@ body.pagina_3 header {
 }
 
 body.pagina_4 header {
-  background-image: url(../images/fondo_header_kahuApp_4.jpg);
+  background-image: url(../images/fondo_header_kahuApp_2.jpg);
 }
 
 body.pagina_5 header {
@@ -253,6 +253,7 @@ h2 {
 
 .container {
   justify-content: center;
+  margin-bottom: 32px;
 }
 .container .carousel-item {
   width: 200px;
@@ -770,6 +771,7 @@ button:hover .button-text {
   }
   .tarjeta-identificatoria {
     margin-top: 20px;
+    margin-bottom: 32px;
   }
   .formulario {
     margin-right: 0;
@@ -818,6 +820,7 @@ button:hover .button-text {
   .tarjeta-identificatoria {
     margin-top: 0;
     margin: 0;
+    margin-bottom: 32px;
   }
 }
 

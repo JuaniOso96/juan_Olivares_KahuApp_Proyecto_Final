@@ -36,7 +36,7 @@ h2 {
 
 .container {
     justify-content: center;
-
+    margin-bottom: 32px;
     .carousel-item {
         img {
             border-radius: 50%;
@@ -45,6 +45,7 @@ h2 {
         width: 200px;
         height: 200px;
     }
+    
 }
 
 .secciones_1 {
@@ -612,6 +613,7 @@ button:hover .button-text {
 
     .tarjeta-identificatoria {
         margin-top: 20px;
+        margin-bottom: 32px;
     }
 
     .formulario {
@@ -685,5 +687,6 @@ button:hover .button-text {
         margin-top: 0;
         margin: 0;
         ;
+        margin-bottom: 32px;
     }
 }
