@@ -53,7 +53,8 @@
                                     src="./images/icono_preguntas_frecuentes.svg" class="i">Preguntas frecuentes</a>
                         </li>
                     </ul>
-                    <button class="btn btn-l btn-outline-secondary" type="button">Descargar app</button>
+                    <button type="button-text" class="btn_1"><strong><img
+                                src="./images/isotipo_kahu_blanco.svg">Descargá la app</strong></button>
                 </div>
             </div>
         </nav>
@@ -63,12 +64,13 @@
     </header>
     <main>
 
-        <section class="carrusel"><!--sección Slider proveedores -->
+        <section class="carrusel">
+            <!-- sección Slider proveedores -->
             <h2><strong>Confían en nosotros</strong></h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="col-md-12">
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="./images/logos_proveedores/ejemplo veterinaria.jpg" class="d-block w-100"
@@ -83,23 +85,20 @@
                                         class="d-block w-100" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-
         </section>
 
         <div id="space" data-aos="fade-up">
@@ -148,12 +147,14 @@
                         <h3><strong>Kahu para dueños de mascotas</strong></h3>
                         <p>Te acompañamos en todos los momentos de tu mascota.</p>
                         <div id="button-w">
-                            <button class="learn-more">
-                                <span class="circle" aria-hidden="true">
-                                    <span class="icon arrow"></span>
-                                </span>
-                                <span class="button-text">Ver más</span>
-                            </button>
+                            <a href="./pages/tengo_mascota.html">
+                                <button class="learn-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Ver más</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -163,12 +164,15 @@
                         <h3><strong>Kahu para proveedores de servicios</strong></h3>
                         <p>Te acompañamos en todos los momentos de tu mascota.</p>
                         <div id="button-w">
-                            <button class="learn-more">
-                                <span class="circle" aria-hidden="true">
-                                    <span class="icon arrow"></span>
-                                </span>
-                                <span class="button-text">Ver más</span>
-                            </button>
+                            <a href="./pages/soy_proveedor.html">
+                                <button class="learn-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Ver más</span>
+
+                                </button>
+                            </a>
                         </div>
             </section>
         </div>
@@ -182,28 +186,43 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
+                            <strong>¿Cuál es nuestra misión?</strong>
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                            body.</div>
+                        <div class="accordion-body">En KahuApp, nuestra misión es crear un vínculo más fuerte entre las
+                            mascotas y sus dueños, ofreciendo una plataforma integral que simplifica y mejora la vida de
+                            ambos. Nos esforzamos por proporcionar herramientas intuitivas y recursos que promuevan la
+                            salud, la felicidad y la seguridad de las mascotas, al tiempo que facilitamos la gestión
+                            para los proveedores de servicios.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
+                            <strong>¿Cuáles son nuestros valores?</strong>
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body"> <strong>-Compromiso:</strong> Estamos comprometidos con la
+                            felicidad y el bienestar de las mascotas y sus dueños. Nos esforzamos por brindar servicios
+                            de calidad y soluciones innovadoras.
+                            <br>
+                            <strong>-Colaboración:</strong> Creemos en la colaboración entre propietarios de mascotas,
+                            proveedores de servicios y nuestro equipo. Juntos, construimos una comunidad sólida y
+                            apasionada.
+                            <br>
+                            <strong>-Transparencia:</strong> Valoramos la transparencia en todas nuestras interacciones.
+                            Queremos que nuestros usuarios confíen en KahuApp para proporcionar información precisa y
+                            servicios confiables.
+                            <br>
+                            <strong>-Innovación:</strong> Buscamos constantemente formas nuevas y creativas de mejorar
+                            la experiencia de cuidado de mascotas, adoptando la innovación como un pilar fundamental de
+                            nuestro enfoque.
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -211,28 +230,30 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                            Nuestros valores
+                            <strong>¿Como nos diferenciamos?</strong>
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                            body. Nothing more exciting happening here in terms of content, but just filling up the
-                            space to make it look, at least at first glance, a bit more representative of how this would
-                            look in a real-world application.</div>
+                        <div class="accordion-body">Nos diferenciamos por ser más que una aplicación; somos un compañero
+                            de confianza para dueños de mascotas y profesionales del cuidado animal. Nuestra plataforma
+                            integra funcionalidades completas y herramientas para el manejo de negocios, todo en un solo
+                            lugar. Además, nos destacamos por la atención personalizada a las necesidades específicas de
+                            cada usuario, fomentando una comunidad donde todos comparten la misma pasión por el cuidado
+                            de las mascotas.</div>
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 
     <footer>
-        <div>
+        <div class="bloque_1">
             <a href="../index.html"> <img src="./images/Logo_Kahu_Blanco_V.2.png" alt="Logo_KahuApp"
                     class="logo_footer"></a>
             <h5 class="text_footer">Uniendo corazones y patitas🐾💖</h5>
+            <button type="submit" class="btn_1"><strong><img src="./images/icono_inversionistas.png"> For
+                    investors</strong></button>
         </div>
         <nav>
             <ul class="list_nav">
@@ -243,7 +264,21 @@
                 <li><a href="./pages/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
             </ul>
         </nav>
-        <img src="./images/qr linktree kahuapp.png" alt="Qr KahuApp" class="imagen_qr">
+
+        <div class="redes">
+            <img src="./images/qr linktree kahuapp.png" alt="Qr KahuApp" class="imagen_qr">
+            <div class="redes-sociales">
+                <a href="https://www.tiktok.com/@kahu.app" target="_blank">
+                    <img src="./images/Logo_redes/tiktok.svg">
+                </a>
+                <a href="https://www.instagram.com/kahu.app" target="_blank">
+                    <img src="./images/Logo_redes/instagram.svg">
+                </a>
+                <a href="mailto:kahuappcontacto@gmail.com">
+                    <img src="./images/Logo_redes/mail.svg">
+                </a>
+            </div>
+        </div>
         <h6 class="pie_pagina">Copyrights 2023 © Hecho con 🩷 por KahuApp</h6>
     </footer>
 

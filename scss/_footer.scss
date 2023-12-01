@@ -7,14 +7,50 @@ footer {
     background-color: $color-primario;
     overflow: auto;
 
-    .text_footer {
-        color: $color-fondo;
-        text-align: center;
-        margin-left: 6%;
-        margin-top: 0%;
-        margin-right: 6%;
-        margin-bottom: 6%;
+
+    .bloque_1 {
+        justify-content: center;
+
+        img {
+            width: 264px;
+        }
+
+        .text_footer {
+            color: $color-fondo;
+            text-align: center;
+            margin-left: 6%;
+            margin-top: 0%;
+            margin-right: 6%;
+            margin-bottom: 6%;
+        }
+
+        .btn_1 {
+            background: linear-gradient(-45deg, var(--color-1), var(--color-2));
+            background-size: 500% 500%;
+            animation: bg 8s ease infinite reverse;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background-color 0.5s;
+            width: 100%;
+            margin: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            img {
+                width: 32px;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.5s ease-in-out;
+
+            }
+        }
     }
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -23,33 +59,51 @@ footer {
         li {
             display: block;
             margin-bottom: 8px;
+
             a {
                 color: $color-fondo;
                 text-decoration: none;
             }
         }
     }
+
     .navbar {
         color: $color-fondo;
         text-align: center;
 
-        
+
     }
-    .imagen_qr {
-        width: 150px;
-        height: 150px;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        margin-right: 6%; // Reduce margin-right for more space
+
+    .redes {
+        .imagen_qr {
+            width: 150px;
+            height: 150px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            margin-top: 8px;
+            display: flex;
+            color: #333;
+            margin-bottom: 8px;
+            align-items: center;
+
+            img {
+                width: 32px;
+            }
+        }
     }
 
     .pie_pagina {
         color: $color-fondo;
         margin-bottom: 32px;
+        margin-top: 16px;
         width: 100%;
         text-align: center;
     }
-    img{
-        width: 264px;
-    }
+
+
 }

@@ -11,7 +11,6 @@
 @import "_variables.scss";
 @import "_navbar.scss";
 @import "_header.scss";
-@import "_carrusel-proveedores.scss";
 @import"_footer.scss";
 @import"_tarjeta-mascota.scss";
 
@@ -34,9 +33,12 @@ h2 {
     margin-top: 32px;
 }
 
+
+
 .container {
     justify-content: center;
     margin-bottom: 32px;
+
     .carousel-item {
         img {
             border-radius: 50%;
@@ -45,7 +47,7 @@ h2 {
         width: 200px;
         height: 200px;
     }
-    
+
 }
 
 .secciones_1 {
@@ -169,6 +171,10 @@ h2 {
         }
     }
 
+    .button-text {
+        text-decoration: none;
+    }
+
 }
 
 .secciones_3 {
@@ -275,6 +281,7 @@ button {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+
 }
 
 button.learn-more {
@@ -291,6 +298,7 @@ button.learn-more .circle {
     height: 3rem;
     background: $color-acento;
     border-radius: 1.625rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 button.learn-more .circle .icon {
@@ -378,7 +386,7 @@ button:hover .button-text {
 
 .grid_conteiner {
     display: grid;
-    grid-template-columns: repeat( auto-fill 3, 1fr);
+    grid-template-columns: repeat(auto-fill 3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin-right: 7.5%;
     margin-left: 7.5%;
@@ -401,7 +409,7 @@ button:hover .button-text {
         padding: 8px;
         color: #272D4D;
         grid-area: area1;
-        
+
         .background-image {
             position: absolute;
             top: 0;
@@ -413,6 +421,7 @@ button:hover .button-text {
             background-position: center;
             opacity: 0.6;
         }
+
         p {
             position: relative;
             z-index: 4;
@@ -427,6 +436,7 @@ button:hover .button-text {
         padding: 8px;
         color: #272D4D;
         grid-area: area2;
+
         .background-image {
             position: absolute;
             top: 0;
@@ -439,6 +449,7 @@ button:hover .button-text {
             opacity: 0.6;
             border-radius: 16px;
         }
+
         p {
             position: relative;
             z-index: 4;
@@ -454,6 +465,7 @@ button:hover .button-text {
         padding: 8px;
         color: #272D4D;
         grid-area: area3;
+
         .background-image {
             position: absolute;
             top: 0;
@@ -481,6 +493,7 @@ button:hover .button-text {
         padding: 8px;
         color: #272D4D;
         grid-area: area4;
+
         .background-image {
             position: absolute;
             top: 0;
@@ -508,6 +521,7 @@ button:hover .button-text {
         padding: 8px;
         color: #272D4D;
         grid-area: area6;
+
         .background-image {
             position: absolute;
             top: 0;
@@ -535,6 +549,7 @@ button:hover .button-text {
         padding: 8px;
         color: #272D4D;
         grid-area: area7;
+
         .background-image {
             position: absolute;
             top: 0;
@@ -562,6 +577,7 @@ button:hover .button-text {
         padding: 8px;
         color: #272D4D;
         grid-area: area8;
+
         .background-image {
             position: absolute;
             top: 0;
@@ -581,8 +597,9 @@ button:hover .button-text {
             text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
         }
     }
-    .modal-header{
-        img{
+
+    .modal-header {
+        img {
             width: 56px;
             height: 56px;
         }
@@ -593,6 +610,12 @@ button:hover .button-text {
 @media screen and (max-width: 449px) {
     .tarjeta-identificatoria {
         width: 100%;
+    }
+
+    .navbar {
+        .btn_1 {
+            width: 100%;
+        }
     }
 }
 
@@ -667,7 +690,7 @@ button:hover .button-text {
         .tip_6,
         .tip_7,
         .tip_8 {
-            width: 100%; 
+            width: 100%;
         }
     }
 }

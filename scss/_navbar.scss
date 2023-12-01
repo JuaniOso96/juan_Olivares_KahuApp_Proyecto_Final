@@ -1,38 +1,63 @@
-.container-fluid{
+.container-fluid {
     background-color: #FCFBF7;
 }
+
 /*Estilo lista*/
-.navbar{
-background-color: rgba(252, 251, 247, 0.9);
-position: fixed;
-z-index: 10;
-width: 100%;
-height: auto;
-.btn{
-    background-color: #B83564;
-    color: #FCFBF7;
-    border: none;
-    border-radius: 30px;
-    margin-left: auto;
-}
-.i{
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-}
-a{
-    color:#272D4D ;
-}
-
-a:hover {
-    color: #B83564;
-}
-
-a:hover::after {
+.navbar {
+    background-color: rgba(252, 251, 247, 0.9);
+    position: fixed;
+    z-index: 10;
     width: 100%;
-    background-color: #B83564;
-}
-.nav-link active{
-    color: #171a2e;
-}
+    height: auto;
+
+    .btn_1 {
+        margin-left: auto;
+        background: linear-gradient(-45deg, var(--color-1), var(--color-2));
+        background-size: 500% 500%;
+        animation: bg 8s ease infinite reverse;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 30px;
+        white-space: nowrap;
+        transition: background-color 0.5s;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        img {
+            width: 26px;
+            margin-left: 8px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+
+        }
+    }
+
+    .i {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+    }
+
+    a {
+        color: #272D4D;
+    }
+
+    a:hover {
+        color: #B83564;
+    }
+
+    a:hover::after {
+        width: 100%;
+        background-color: #B83564;
+    }
+
+    .nav-link active {
+        color: #171a2e;
+    }
 }
