@@ -1,5 +1,5 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +21,7 @@
   width: 100%;
   height: auto;
 }
+
 .navbar .btn_1 {
   margin-left: auto;
   background: linear-gradient(-45deg, var(--color-1), var(--color-2));
@@ -37,29 +38,36 @@
   width: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .navbar .btn_1 img {
   width: 26px;
   margin-left: 16px;
 }
+
 .navbar .btn_1:hover {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
+
 .navbar .i {
   width: 16px;
   height: 16px;
   margin-right: 4px;
 }
+
 .navbar a {
   color: #272D4D;
 }
+
 .navbar a:hover {
   color: #B83564;
 }
+
 .navbar a:hover::after {
   width: 100%;
   background-color: #B83564;
 }
+
 .navbar .nav-link active {
   color: #171a2e;
 }
@@ -115,12 +123,15 @@ footer {
   background-color: #272D4D;
   overflow: auto;
 }
+
 footer .bloque_1 {
   justify-content: center;
 }
+
 footer .bloque_1 img {
   width: 264px;
 }
+
 footer .bloque_1 .text_footer {
   color: #FCFBF7;
   text-align: center;
@@ -129,6 +140,7 @@ footer .bloque_1 .text_footer {
   margin-right: 6%;
   margin-bottom: 6%;
 }
+
 footer .bloque_1 .btn_1 {
   background: linear-gradient(-45deg, var(--color-1), var(--color-2));
   background-size: 500% 500%;
@@ -144,35 +156,43 @@ footer .bloque_1 .btn_1 {
   margin: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 footer .bloque_1 .btn_1 img {
   width: 32px;
 }
+
 footer .bloque_1 .btn_1:hover {
   transform: scale(1.05);
   transition: 0.5s ease-in-out;
 }
+
 footer ul {
   list-style-type: none;
   padding: 0;
 }
+
 footer ul li {
   display: block;
   margin-bottom: 8px;
 }
+
 footer ul li a {
   color: #FCFBF7;
   text-decoration: none;
 }
+
 footer .navbar {
   color: #FCFBF7;
   text-align: center;
 }
+
 footer .redes .imagen_qr {
   width: 150px;
   height: 150px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
+
 footer .redes .redes-sociales {
   display: flex;
   justify-content: center;
@@ -182,9 +202,11 @@ footer .redes .redes-sociales {
   margin-bottom: 8px;
   align-items: center;
 }
+
 footer .redes .redes-sociales img {
   width: 32px;
 }
+
 footer .pie_pagina {
   color: #FCFBF7;
   margin-bottom: 32px;
@@ -206,18 +228,22 @@ footer .pie_pagina {
   justify-content: center;
   align-items: flex-start;
 }
+
 .container .formulario {
   width: 100%;
   max-width: 400px;
   margin-right: 16px;
 }
+
 .container .formulario form {
   margin-bottom: 16px;
 }
+
 .container .formulario form label {
   display: block;
   margin-bottom: 4px;
 }
+
 .container .formulario form input,
 .container .formulario form select {
   width: 100%;
@@ -227,9 +253,11 @@ footer .pie_pagina {
   border-radius: 30px;
   font-size: 16px;
 }
+
 .container .tarjeta-identificatoria div {
   margin-bottom: 10px;
 }
+
 .container .btn_1 {
   background: linear-gradient(-45deg, var(--color-1), var(--color-2));
   background-size: 500% 500%;
@@ -244,10 +272,12 @@ footer .pie_pagina {
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .container .btn_1:hover {
   transform: scale(1.05);
   transition: 0.5s ease-in-out;
 }
+
 .container .tarjeta-identificatoria {
   display: flex;
   justify-content: space-between;
@@ -261,27 +291,30 @@ footer .pie_pagina {
   z-index: 9;
   background-color: #FCFBF7;
 }
+
 .container .tarjeta-identificatoria .columna-1 {
   width: 40%;
   justify-content: center;
 }
+
 .container .tarjeta-identificatoria .columna-2,
 .container .tarjeta-identificatoria .columna-3 {
   width: 30%;
   justify-content: center;
 }
+
 .container .tarjeta-identificatoria #codigo-qr {
   width: 150px;
   height: 150px;
 }
+
 .container .tarjeta-identificatoria #imagen-mascota {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  /* Para ajustar la imagen manteniendo las proporciones */
   border-radius: 16px;
-  /* Para hacer que la imagen sea circular, puedes ajustar el porcentaje según tus preferencias */
 }
+
 .container .tarjeta-identificatoria .logo-kahuapp {
   width: 100px;
   margin-top: 20px;
@@ -310,10 +343,12 @@ h2 {
   justify-content: center;
   margin-bottom: 32px;
 }
+
 .container .carousel-item {
   width: 200px;
   height: 200px;
 }
+
 .container .carousel-item img {
   border-radius: 50%;
 }
@@ -330,10 +365,12 @@ h2 {
   margin-bottom: 32px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .secciones_1 iframe {
   border-radius: 8px;
   width: 50%;
 }
+
 .secciones_1 .imagen_section_1 {
   width: 50%;
   height: 320px;
@@ -356,13 +393,16 @@ h2 {
   0% {
     background-position: 0 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0 50%;
   }
 }
+
 .secciones_2 {
   overflow: auto;
   background: linear-gradient(-45deg, var(--color-1), var(--color-2));
@@ -370,6 +410,7 @@ h2 {
   animation: bg 8s ease infinite reverse;
   margin-bottom: 32px;
 }
+
 .secciones_2 .h2_blanco {
   color: #FCFBF7;
   text-align: center;
@@ -377,12 +418,14 @@ h2 {
   width: 100%;
   padding: 16px;
 }
+
 .secciones_2 .secciones_2_1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .secciones_2 .secciones_2_1 .card {
   width: 300px;
   border: 1px solid #FCFBF7;
@@ -395,33 +438,41 @@ h2 {
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
+
 .secciones_2 .secciones_2_1 .card .card-container {
   overflow: hidden;
 }
+
 .secciones_2 .secciones_2_1 .card .card-container img {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
+
 .secciones_2 .secciones_2_1 .card:hover {
   transform: scale(1.02);
 }
+
 .secciones_2 .secciones_2_1 .card:hover .card-container img {
   transform: scale(1.5);
 }
+
 .secciones_2 .secciones_2_1 .card .card-content {
   padding: 8px;
 }
+
 .secciones_2 .secciones_2_1 .card .card-content h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
   color: #B83564;
 }
+
 .secciones_2 .secciones_2_1 .card .card-content p {
   font-size: 1rem;
   margin-bottom: 16px;
   color: #272D4D;
 }
+
 .secciones_2 .button-text {
   text-decoration: none;
 }
@@ -430,6 +481,7 @@ h2 {
   overflow: auto;
   background-color: #FCFBF7;
 }
+
 .secciones_3 h2 {
   color: #B83564;
   text-align: center;
@@ -437,12 +489,14 @@ h2 {
   width: 100%;
   padding: 16px;
 }
+
 .secciones_3 .secciones_3_1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .secciones_3 .secciones_3_1 .card {
   position: relative;
   width: 300px;
@@ -456,41 +510,51 @@ h2 {
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
+
 .secciones_3 .secciones_3_1 .card .card-container {
   overflow: hidden;
 }
+
 .secciones_3 .secciones_3_1 .card .card-container img {
   width: 50%;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
+
 .secciones_3 .secciones_3_1 .card:hover {
   transform: scale(1.02);
 }
+
 .secciones_3 .secciones_3_1 .card:hover .card-container img {
   transform: scale(1.5);
 }
+
 .secciones_3 .secciones_3_1 .card .card-content {
   padding: 8px;
 }
+
 .secciones_3 .secciones_3_1 .card .card-content h3 {
   font-size: 1rem;
   margin-bottom: 8px;
   color: #B83564;
 }
+
 .secciones_3 .secciones_3_1 .card .card-content p {
   font-size: 0.875rem;
   margin-bottom: 16px;
   color: #272D4D;
 }
+
 .secciones_3 .secciones_3_1 .card .card-footer {
   background: linear-gradient(-45deg, var(--color-1), var(--color-2));
   background-size: 500% 500%;
   animation: bg 8s ease infinite reverse;
 }
+
 .secciones_3 .secciones_3_1 .card .card-footer strong {
   color: #fff;
 }
+
 .secciones_3 .secciones_3_1 .card .floating-chip {
   position: absolute;
   background: linear-gradient(-45deg, var(--color-1), var(--color-2));
@@ -631,6 +695,7 @@ button:hover .button-text {
   justify-content: center;
   grid-template-areas: "area1 area2 area3 area4" "area1 area2 area3 area4" "area1 area2 area6 area7" "area8 area8 area8 area7" "area8 area8 area8 area7";
 }
+
 .grid_conteiner .tip_1 {
   position: relative;
   overflow: hidden;
@@ -640,6 +705,7 @@ button:hover .button-text {
   color: #272D4D;
   grid-area: area1;
 }
+
 .grid_conteiner .tip_1 .background-image {
   position: absolute;
   top: 0;
@@ -651,11 +717,13 @@ button:hover .button-text {
   background-position: center;
   opacity: 0.6;
 }
+
 .grid_conteiner .tip_1 p {
   position: relative;
   z-index: 4;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+
 .grid_conteiner .tip_2 {
   position: relative;
   border: solid 1px #643057;
@@ -664,6 +732,7 @@ button:hover .button-text {
   color: #272D4D;
   grid-area: area2;
 }
+
 .grid_conteiner .tip_2 .background-image {
   position: absolute;
   top: 0;
@@ -676,11 +745,13 @@ button:hover .button-text {
   opacity: 0.6;
   border-radius: 16px;
 }
+
 .grid_conteiner .tip_2 p {
   position: relative;
   z-index: 4;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+
 .grid_conteiner .tip_3 {
   position: relative;
   border: solid 1px #643057;
@@ -689,6 +760,7 @@ button:hover .button-text {
   color: #272D4D;
   grid-area: area3;
 }
+
 .grid_conteiner .tip_3 .background-image {
   position: absolute;
   top: 0;
@@ -701,11 +773,13 @@ button:hover .button-text {
   opacity: 0.6;
   background-image: url("../images/Tips/fondo_tip_3.jpg");
 }
+
 .grid_conteiner .tip_3 p {
   position: relative;
   z-index: 4;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+
 .grid_conteiner .tip_4 {
   position: relative;
   border: solid 1px #643057;
@@ -714,6 +788,7 @@ button:hover .button-text {
   color: #272D4D;
   grid-area: area4;
 }
+
 .grid_conteiner .tip_4 .background-image {
   position: absolute;
   top: 0;
@@ -726,11 +801,13 @@ button:hover .button-text {
   opacity: 0.6;
   background-image: url("../images/Tips/fondo_tip_4.jpg");
 }
+
 .grid_conteiner .tip_4 p {
   position: relative;
   z-index: 4;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+
 .grid_conteiner .tip_6 {
   position: relative;
   border: solid 1px #643057;
@@ -739,6 +816,7 @@ button:hover .button-text {
   color: #272D4D;
   grid-area: area6;
 }
+
 .grid_conteiner .tip_6 .background-image {
   position: absolute;
   top: 0;
@@ -751,11 +829,13 @@ button:hover .button-text {
   opacity: 0.6;
   background-image: url("../images/Tips/fondo_tip_6.jpg");
 }
+
 .grid_conteiner .tip_6 p {
   position: relative;
   z-index: 4;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+
 .grid_conteiner .tip_7 {
   position: relative;
   border: solid 1px #643057;
@@ -764,6 +844,7 @@ button:hover .button-text {
   color: #272D4D;
   grid-area: area7;
 }
+
 .grid_conteiner .tip_7 .background-image {
   position: absolute;
   top: 0;
@@ -776,11 +857,13 @@ button:hover .button-text {
   opacity: 0.6;
   background-image: url("../images/Tips/fondo_tip_7.jpg");
 }
+
 .grid_conteiner .tip_7 p {
   position: relative;
   z-index: 4;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+
 .grid_conteiner .tip_8 {
   position: relative;
   border: solid 1px #643057;
@@ -789,6 +872,7 @@ button:hover .button-text {
   color: #272D4D;
   grid-area: area8;
 }
+
 .grid_conteiner .tip_8 .background-image {
   position: absolute;
   top: 0;
@@ -801,11 +885,13 @@ button:hover .button-text {
   opacity: 0.6;
   background-image: url("../images/Tips/fondo_tip_8.jpg");
 }
+
 .grid_conteiner .tip_8 p {
   position: relative;
   z-index: 4;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+
 .grid_conteiner .modal-header img {
   width: 56px;
   height: 56px;
@@ -816,34 +902,42 @@ button:hover .button-text {
   .tarjeta-identificatoria {
     width: 100%;
   }
+
   .navbar .btn_1 {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 1199px) {
   .secciones_1 iframe {
     width: 100%;
   }
+
   .parrafos {
     width: 100%;
   }
+
   .secciones_1 .imagen_section_1 {
     width: 100%;
     order: -1;
   }
+
   .tarjeta-identificatoria {
     margin-top: 20px;
     margin-bottom: 32px;
   }
+
   .formulario {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
   .grid_conteiner {
     grid-template-columns: 2fr;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "area1" "area2" "area3" "area4" "area6" "area7" "area8" "area9";
   }
+
   .grid_conteiner .tip_1,
   .grid_conteiner .tip_2,
   .grid_conteiner .tip_3,
@@ -855,12 +949,14 @@ button:hover .button-text {
     height: 200px;
   }
 }
+
 @media screen and (min-width: 624px) and (max-width: 1199px) {
   .grid_conteiner {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "area1 area2" "area3 area4" "area6 area7" "area8 area9";
   }
+
   .grid_conteiner .tip_1,
   .grid_conteiner .tip_2,
   .grid_conteiner .tip_3,
@@ -871,14 +967,17 @@ button:hover .button-text {
     width: 100%;
   }
 }
+
 /* Estilos para desktop */
 @media screen and (min-width: 1200px) {
   .container {
     align-items: center;
   }
+
   .formulario {
     margin-bottom: 0;
   }
+
   .tarjeta-identificatoria {
     margin-top: 0;
     margin: 0;
